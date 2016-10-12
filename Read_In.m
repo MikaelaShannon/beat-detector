@@ -1,6 +1,5 @@
 function [audiosamp,audiotxt] = Read_In()
 %READ_IN: Prompts user to select and trim audio example
-
 % Select Audio Sample
 audiotxt = [];
 
