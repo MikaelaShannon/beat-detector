@@ -33,12 +33,12 @@ while(size(Number) < 3)
 end
 
 fA = strcat(OC,'_',Number,'.wav');
-Filename = strcat('training_set\',OC,'\',fA);
+Filename = strcat('training_set',filesep,OC,filesep,fA);
 [y,Fs] = audioread(Filename);
 
 if strcmp(OC,'open')
     fB = strcat(OC,'_',Number,'.txt');
-    Filename2 = strcat('training_set\',OC,'\',fB);   
+    Filename2 = strcat('training_set',filesep,OC,filesep,fB);   
     audiotxt = csvread(Filename2);
 end
 
